@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>STUDENT REGISTRATION FORM</h1>
+    <form >
+
+        <label for="name">Full Name</label>
+        <input type="text"
+         name="username"
+          id="name" 
+          minlength="3"
+          required
+          maxlength="15"
+          placeholder="Enter Your Name">
+
+          <br><br>
+
+
+        <label for="email">Email</label>  
+        <input type="email"
+         name="email"
+          id="email" 
+          minlength="1"
+          maxlength="25"
+          required
+          placeholder="example@gmail.com">
+
+
+          <br><br>
+        
+          <label for="telli">Phone No:</label>
+          <input type="tel" minlength="1" maxlength="10"
+          required   >
+
+
+         <br>
+         <br>
+
+        <label for="password">Password</label>
+        <input type="password"
+         name="password"
+          id="password" 
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^\w\s]).{8,}"
+          required
+          placeholder="">
+
+
+          <br><br>
+
+        <label for="dob">Date of Birth</label>
+        <input type="date"
+         name="dob"
+         required
+          id="dob" 
+          placeholder="">
+
+
+          <br><br>
+
+          Gender: <br><br>
+        
+        <input type="radio"
+         name="Gender"
+         required
+          id="radio1"   
+            value="Male">
+          <label for="radio1">Male</label>
+        
+
+        <input type="radio"
+         name="Gender"
+          id="radio"
+          required 
+            value="Female">
+          <label for="radio">Female</label>
+
+          <br><br>
+          Hobbies: <br><br> 
+
+
+      
+          
+          <input type="checkbox"
+           name="checkbox" 
+           id="chk"
+           required
+           value="Reading">
+           <label for="chk">Reading</label>
+
+
+          <input type="checkbox"
+           name="checkbox" 
+           id="chk"
+           required
+           value="Reading">
+           <label for="chk">Running</label>
+         
+
+          
+           
+
+           <br><br>
+
+           <p>
+            Upload Photo:
+            <input type="file"
+             name="File"
+              id="fle"
+              required
+              placeholder="Gayness Proof">
+              
+           </p>
+
+           <br><br>
+
+           <input type="submit"
+            
+            name="submit"
+            required 
+            id="sb"
+             placeholder="Register">
+             <label for="sb"></label>
+
+
+            
+             <input type="reset" 
+             name="reset"
+              id="rt"
+              required
+              placeholder="Clear Form">
+              <label for="rt"></label>
+
+             
+
+              
+
+
+
+          
+    </form>
+</body>
+</html>
